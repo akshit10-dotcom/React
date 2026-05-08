@@ -1,0 +1,65 @@
+<!-- react is a declarative ,efficient and flexible JavaScript library for building user interfaces . It lets you compose complex UIs from small and isolated pieces of code called “components” . React has a few different kinds of components , but we’ll start with React.Component subclasses : -->
+<!-- react uses jsx which is a syntax extension to JavaScript . It looks like a mix of HTML and JavaScript . It allows you to write HTML-like code inside your JavaScript files , which makes it easier to create and visualize the structure of your UI . -->
+<!-- rule 1:single parent element
+rule 2:JavaScript expressions in JSX must be wrapped in curly braces {}
+rule 3:Attribute names in JSX are camelCase instead of lowercase
+rule 4:Self-closing tags must end with a slash />
+rule 5:Inline styles in JSX must be specified as an object with camelCase property names -->
+<!-- usestate is a hook that allows you to add state to function components . It returns an array with two elements : the current state value and a function to update it . You can use useState to store any type of data , such as strings , numbers , arrays , objects , etc . When you call the state update function , React will re-render the component with the new state value .
+useeffect is a hook that allows you to perform side effects in function components . It serves the same purpose as componentDidMount , componentDidUpdate , and componentWillUnmount in React classes , but unified into a single API . You can use useEffect to fetch data , set up a subscription , and manually change the DOM in React components . By default , it runs both after the first render and after every update . You can also specify an array of dependencies to control when the effect should run . If you pass an empty array [] , the effect will only run once after the initial render . -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <form action="">
+        <div class="mb-3">
+            <label for="exampleInputEmail">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
